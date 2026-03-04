@@ -1,50 +1,55 @@
-# Welcome to your Expo app 👋
+Harika! En zor kısmını, o inatçı emülatörü dize getirerek başardın. Şov başlıyor! 2 saatlik bu yoğun "challenge" sürecinde yaşadığımız teknik zorlukları ve çözümleri README dosyasına eklemek, hocanın gözünde senin "problem çözme" yeteneğini (troubleshooting) kanıtlayacak ve puanını artıracaktır.
 
-This is an [Expo](https://expo.dev) project created with [`create-expo-app`](https://www.npmjs.com/package/create-expo-app).
+Aşağıdaki metni kopyalayıp projenin ana dizinindeki README.md dosyasına yapıştır. YouTube linkini ve GitHub linkini eklemeyi unutma!
 
-## Get started
+🩺 TAK (Temiz Aralıklı Kateterizasyon) Mobil Uygulaması
+Bu uygulama, 2 saatlik "Yerelde Uygulama Geliştirme Challenge" kapsamında, atanan özel moodboard tasarımına sadık kalınarak geliştirilmiş bir sağlık asistanı prototipidir.
 
-1. Install dependencies
+🎯 Proje Amacı ve Çözüm
+Problem: TAK işlemi uygulayan hastaların süreçle ilgili bilgi eksikliği ve uzmanlara ulaşma zorluğu.
 
-   ```bash
-   npm install
-   ```
+Çözüm: Hastaların sorularına anında yanıt bulabileceği (SSS), hızlıca hasta kaydı oluşturabileceği ve uzman iletişim bilgilerine ulaşabileceği kullanıcı dostu bir platform.
 
-2. Start the app
+Tasarım İlhamı: Atanan panodaki medikal güven hissi veren mavi tonlar ve beyaz minimalist kart yapısı temel alınmıştır.
 
-   ```bash
-   npx expo start
-   ```
+🛠️ Kullanılan Teknolojiler & Mimari
+Framework: React Native + Expo
 
-In the output, you'll find options to open the app in a
+Navigasyon: Expo Router (File-based Routing)
 
-- [development build](https://docs.expo.dev/develop/development-builds/introduction/)
-- [Android emulator](https://docs.expo.dev/workflow/android-studio-emulator/)
-- [iOS simulator](https://docs.expo.dev/workflow/ios-simulator/)
-- [Expo Go](https://expo.dev/go), a limited sandbox for trying out app development with Expo
+State Yönetimi: React Hooks (useState)
 
-You can start developing by editing the files inside the **app** directory. This project uses [file-based routing](https://docs.expo.dev/router/introduction).
+Simülasyon: Android Studio (Pixel 3a - API 28)
 
-## Get a fresh project
+📂 Uygulama Özellikleri (5 Ekran)
+Ana Sayfa: Kategori bazlı yönlendirme menüsü.
 
-When you're ready, run:
+Sıkça Sorulan Sorular: Akordeon yapısında, state yönetimi ile çalışan dinamik soru-cevap listesi.
 
-```bash
-npm run reset-project
-```
+Hasta Kaydı: Form kontrolü (Error handling) ve sahte API isteği (Loading state) barındıran kayıt ekranı.
 
-This command will move the starter code to the **app-example** directory and create a blank **app** directory where you can start developing.
+Hakkında: Uygulamanın vizyonunu ve sürüm bilgilerini içeren bilgilendirme sayfası.
 
-## Learn more
+İletişim: Uzman hemşire bilgilerini içeren hızlı erişim ekranı.
 
-To learn more about developing your project with Expo, look at the following resources:
+🔧 Geliştirme Süreci ve Teknik Mücadele (Troubleshooting)
+Challenge süresince yerel geliştirme ortamında (Android Studio) karşılaşılan teknik engeller başarıyla aşılmıştır:
 
-- [Expo documentation](https://docs.expo.dev/): Learn fundamentals, or go into advanced topics with our [guides](https://docs.expo.dev/guides).
-- [Learn Expo tutorial](https://docs.expo.dev/tutorial/introduction/): Follow a step-by-step tutorial where you'll create a project that runs on Android, iOS, and the web.
+Emülatör Optimizasyonu: API 36 gibi ağır sürümler yerine, sistem kaynaklarını verimli kullanan API 28 (Pie) sürümüne geçiş yapılarak stabilite sağlanmıştır.
 
-## Join the community
+ADB Yetkilendirme: Sanal cihaz üzerindeki "Unauthorized" hatası, Geliştirici Seçenekleri ve ADB server (kill/start) müdahaleleriyle çözülmüştür.
 
-Join our community of developers creating universal apps.
+Network & Tunneling: Yerel ağ (LAN) ve Ngrok tünel bağlantıları test edilerek fiziksel cihaz ve emülatör senkronizasyonu sağlanmıştır.
 
-- [Expo on GitHub](https://github.com/expo/expo): View our open source platform and contribute.
-- [Discord community](https://chat.expo.dev): Chat with Expo users and ask questions.
+🎥 Uygulama Tanıtım Videosu
+Uygulamanın tüm özelliklerini ve akışını içeren 1 dakikalık tanıtım videosu:
+👉 [https://www.youtube.com/shorts/UtuOgLVTD-8]
+
+⚙️ Kurulum ve Çalıştırma
+Repoyu klonlayın: git clone https://github.com/KULLANICI_ADIN/REPO_ADIN.git
+
+Bağımlılıkları yükleyin: npm install
+
+Projeyi başlatın: npx expo start
+
+Emülatör için a tuşuna basın.
